@@ -1,0 +1,6 @@
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.exe.config
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.exe
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.pdb
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.csprojResolveAssemblyReference.cache
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.exe
+c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.pdb
