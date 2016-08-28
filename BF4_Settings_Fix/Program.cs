@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace BF4_Settings_Fix
 {
@@ -13,11 +15,17 @@ namespace BF4_Settings_Fix
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.Priority = ThreadPriority.Lowest;
+
+            //Modify files once on inital load
+            OpenAndModifyFile();
+
             //Loop to always run to check for BF4
             while (true)
             {
                 ModificationCheck();
             }
+
         }
 
         /// <summary>
@@ -27,9 +35,12 @@ namespace BF4_Settings_Fix
         {
             bool _needToFixSettings = false;
 
+            var _currentProcess = Process.GetCurrentProcess();
+
             if (!ProcessRunning())
             {
-                return;
+                _currentProcess.PriorityClass = ProcessPriorityClass.Idle;    
+                Thread.Sleep(60000);
             }
             else
             {
@@ -49,9 +60,13 @@ namespace BF4_Settings_Fix
                         //now we can modify settings
                         //read / edit file
 
+                        _currentProcess.PriorityClass = ProcessPriorityClass.Normal;
+
                         OpenAndModifyFile();
 
                         _needToFixSettings = false;
+
+                        _currentProcess.PriorityClass = ProcessPriorityClass.Idle;
                     }
                 }
             }
