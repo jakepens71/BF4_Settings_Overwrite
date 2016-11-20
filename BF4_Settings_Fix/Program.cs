@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Threading;
+using SimpleLogger;
 
 namespace BF4_Settings_Fix
 {
@@ -15,6 +17,12 @@ namespace BF4_Settings_Fix
     {
         static void Main(string[] args)
         {
+            var temp = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Temp\\BF4SettingsFix";
+
+            SimpleLog.SetLogFile(logDir: temp, prefix: "MyLog_", writeText: false);
+
+            SimpleLog.Info("Starting BF4_Settings_Fix at: " + DateTime.Now.ToString());
+
             Thread.CurrentThread.Priority = ThreadPriority.Lowest;
 
             //Modify files once on inital load
@@ -54,11 +62,15 @@ namespace BF4_Settings_Fix
                         //Not sure how BF saves settings
                         //(game exists, "apply", etc so
                         //wait for game to exit
+                        SimpleLog.Info("BF4 Running at: " + DateTime.Now.ToString());
+                        Thread.Sleep(60000);
                     }
                     else
                     {
                         //now we can modify settings
                         //read / edit file
+
+                        SimpleLog.Info("BF4 Stopped Running at: " + DateTime.Now.ToString());
 
                         _currentProcess.PriorityClass = ProcessPriorityClass.Normal;
 
@@ -89,11 +101,16 @@ namespace BF4_Settings_Fix
         /// </summary>
         public static void OpenAndModifyFile()
         {
+            SimpleLog.Info("Modifying Settings " + DateTime.Now.ToString());
+
             try
             {
-                var userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-                var bf4Settings = userFolderPath + "\\Documents\\Battlefield 4\\settings\\PROFSAVE_profile";
-                var bf4SettingsNew = userFolderPath + "\\Documents\\Battlefield 4\\settings\\PROFSAVE_profile_New";
+                
+
+                //var userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                var userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                var bf4Settings = userFolderPath + "\\Battlefield 4\\settings\\PROFSAVE_profile";
+                var bf4SettingsNew = userFolderPath + "\\Battlefield 4\\settings\\PROFSAVE_profile_New";
 
                 if (File.Exists(bf4Settings))
                 {
@@ -129,9 +146,9 @@ namespace BF4_Settings_Fix
                     File.Move(bf4SettingsNew, bf4Settings);
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                Console.WriteLine("Error occured in openAndModifyFile");
+                SimpleLog.Error("Error occured in OpenAndModifyFile: \n\n" + ex.ToString());
             }
         }
 

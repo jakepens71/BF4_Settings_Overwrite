@@ -8,3 +8,17 @@ c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settin
 c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.application
 c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.exe.manifest
 c:\users\jacob\documents\visual studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.application
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.exe.config
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.exe
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.pdb
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.exe.manifest
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.application
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.exe
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\BF4_Settings_Fix.pdb
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.csprojResolveAssemblyReference.cache
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.exe.manifest
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\obj\Debug\BF4_Settings_Fix.application
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\MongoDB.Bson.dll
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\MongoDB.Driver.dll
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\MongoDB.Bson.xml
+I:\Users\Jacob\Documents\Visual Studio 2015\Projects\BF4_Settings_Fix\BF4_Settings_Fix\bin\Debug\MongoDB.Driver.xml
